@@ -608,10 +608,15 @@ width: 100%;
         height: auto;
     }
     .clerk-compact .header-actual-vehicle {
-        height: 5%;
+        height: auto;
+        flex-wrap: wrap;
+    }
+    .clerk-compact .header-actual-vehicle .vehicle-lights {
+        max-width: 100%;
+        justify-content: flex-start;
     }
     .simulcast-panel {
-        height: 90%;
+        height:auto;
     }
     .simulcast-column-left .description-table div.announce .announce-text {
         line-height: 1.6vw;
@@ -621,14 +626,48 @@ width: 100%;
     }
     .simulcast-column-center {
         height: 64%;
-        flex-basis: 60%;
+        flex-basis: 100%;
     }
     .simulcast-column-right {
-        height: 64%;
-        flex-basis: 40%;
+        height: auto;
+        flex-basis: 100%;
         max-width: inherit;
     }
     .simulcast-toolbar {
         height: 5%;
+    }
+    .simulcast-column-center .main-buttons .left-column {
+        flex: none;
+        padding-right: 6px;
+    }
+    .simulcast-column-center .main-buttons .center-column .top-buttons button, .simulcast-column-center .main-buttons .center-column .bottom-buttons button, .simulcast-column-center .main-buttons .center-column .floor-buttons button, .simulcast-column-center .main-buttons .center-column .floor-buttons .form-control {
+        line-height: 1.8vw;
+    }
+    .simulcast-column-center .main-buttons .left-column {
+        margin-top: 0;
+    }
+    .center-column {
+        padding-top: 0;
+    }
+    .custom-bid {
+        height: auto;
+    }
+    .simulcast-column-right .alt-group-btn {
+        max-height: 320px;
+    }
+    .clerk-compact {
+        height: auto;
+    }
+    .simulcast-toolbar-items {
+        padding: 15px 0;
+    }
+    .simulcast-column-right .alt-group-btn {
+        padding-top: 0;
+    }
+    .vehicle-lights div {
+        margin-right: 10px;
+    }
+    .simulcast-column-center .main-buttons {
+        height: 250px;
     }
 }
