@@ -597,3 +597,38 @@ width: 100%;
     cursor: default; 
     font-size: 1.1vw;
 }
+/*MEDIA*/
+@media all and (max-width: 991px) {
+    .simulcast-panel {
+        flex-wrap: wrap;
+    }
+    .simulcast-column-left {
+        flex-basis: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+    .clerk-compact .header-actual-vehicle {
+        height: 5%;
+    }
+    .simulcast-panel {
+        height: 90%;
+    }
+    .simulcast-column-left .description-table div.announce .announce-text {
+        line-height: 1.6vw;
+    }
+    .simulcast-column-left {
+        height: 36%;
+    }
+    .simulcast-column-center {
+        height: 64%;
+        flex-basis: 60%;
+    }
+    .simulcast-column-right {
+        height: 64%;
+        flex-basis: 40%;
+        max-width: inherit;
+    }
+    .simulcast-toolbar {
+        height: 5%;
+    }
+}
