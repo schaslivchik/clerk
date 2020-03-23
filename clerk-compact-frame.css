@@ -1,0 +1,599 @@
+/* GLOBAL STYLES */
+
+.clerk-compact {
+    background: #1E3358;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    color: #fff;
+    padding: 5px;
+    height: 100vh;
+}
+.clerk-compact-panel {
+    height: 100%;
+}
+.clerk-compact .badge-primary {
+    background: #0275D8;
+}
+
+.badge {
+    font-size: 1.1vw;
+}
+
+.btn-dark,
+.btn-dark:visited,
+.current-process {
+    background: #12213E;
+    border-color: #12213E;
+    color: #fff;
+}
+
+.btn-dark:hover,
+.btn-dark:focus {
+    background: #274784;
+    border-color: #274784;
+    color: #fff !important;
+}
+
+
+/* GLOBAL STYLES END */
+
+
+/* HEADER ACTUAL VEHICLE + LIGHTS */
+
+.clerk-compact .header-actual-vehicle {
+    display: flex;
+    height: 10%;
+}
+
+.clerk-compact .header-actual-vehicle .vehicle-name,
+.clerk-compact .header-actual-vehicle .vehicle-lights {
+    padding: 5px;
+    width: 100%;
+}
+
+.clerk-compact .header-actual-vehicle .vehicle-name {
+    display: flex;
+    font-size: 2vw;
+    font-weight: 400;
+    align-items: center;
+}
+
+.clerk-compact .header-actual-vehicle .vehicle-name span {
+    display: inline-block;
+    margin-right: 20px;
+    font-weight: 600;
+}
+
+.clerk-compact .header-actual-vehicle .vehicle-lights {
+    max-width: 24.5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.clerk-compact .header-actual-vehicle .vehicle-lights div.btn {
+    width: 4vw;
+    height: 4vw;
+    border-radius: 50%;
+    border-width: 2px;
+}
+
+.clerk-compact .header-actual-vehicle .vehicle-lights div.btn:not(.active) {
+    background: none;
+}
+
+.description-table-info {
+    height: 40%;
+}
+.announce {
+    height: 20%;
+}
+/* HEADER ACTUAL VEHICLE + LIGHTS END */
+
+
+/* SIMULCAST RIGHT PANEL*/
+
+.simulcast-panel {
+    display: flex;
+    height: 80%;
+}
+
+.simulcast-column-left,
+.simulcast-column-right {
+    flex-basis: 25%;
+    height: 100%;
+    max-width: 25%;
+}
+.description-table,
+.description-table-info {
+    width: 100%;
+}
+.clerk-vehicle-seller-name {
+    max-width: 69%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 0;
+}
+
+.simulcast-column-center {
+    flex-basis: 50%;
+    height: 100%;
+}
+
+.simulcast-column-left,
+.simulcast-column-right,
+.simulcast-column-center {
+    padding: 5px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.simulcast-column-left .description-table {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1vw;
+    color: #C3C3C3;
+    height: 100%;
+}
+.simulcast-column-left {
+    padding-bottom: 8px;
+}
+.simulcast-column-left .description-table div {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: flex-start;
+}
+.description-table-info-item {
+    width: 100%;
+    padding: 4px 10px;
+}
+
+.description-table-info-item:nth-child(even){
+    background-color: #1e3358;
+}
+
+.simulcast-column-left .description-table>div:nth-child(odd) {
+    background-color: #12213E;
+}
+
+.simulcast-column-left .description-table div div {
+    color: #fff;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+}
+.description-table-info {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+}
+.description-table-info-item span {
+    width: 30%;
+}
+
+
+.simulcast-column-left .description-table .odometer-data {
+    display: contents;
+}
+
+.simulcast-column-left .description-table .title_choice {
+    justify-content: flex-start;
+}
+
+.simulcast-column-left .description-table .title_choice label {
+    font-weight: 500;
+    margin-bottom: 0px;
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.simulcast-column-left .description-table input[type=radio] {
+    margin: auto 5px;
+}
+
+.simulcast-column-left .description-table div.announce {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    overflow: hidden;
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+}
+
+.simulcast-column-left .description-table .announce button {
+    margin-right: 5px;
+    font-weight: 600;
+    font-size: 0.8vw;
+    color: #000;
+    margin-top: -5px;
+}
+
+.title_choice:hover label {
+    cursor: pointer;
+}
+
+.simulcast-column-left .description-table .announce span.glyphicon {
+    font-size: 0.9vw;
+}
+
+.simulcast-column-left .description-table div.announce .announce-text {
+    color: #fff;
+    font-size: 0.9vw;
+    line-height: 1.2vw;
+    cursor: default;
+    height: 100%;
+    padding-top: 6px;
+    margin: 0;
+    overflow-y: scroll;
+    width: 100%;
+}
+
+.announce-block {
+    display: block;
+    padding: 14px 0;
+    width: 100%;
+}
+
+.simulcast-column-left .description-table div.history {
+    flex-wrap: wrap;
+    overflow: hidden;
+    margin-bottom: 4px;
+    overflow-y: scroll;
+    height: 40%;
+    padding: 6px;
+}
+
+.simulcast-column-left .description-table .history div {
+    font-weight: 400;
+    font-size: 0.9vw;
+    line-height: 1.4vw;
+    width: 100%;
+}
+
+.description-table {
+    height: 100%;
+}
+.description-table-info, .history {
+    height: 40%
+}
+.announce {
+    height: 20%;
+    padding-right: 0;
+    width: 100%;
+}
+.announce-block {
+    height: 100%;
+}
+/* SMULCAST RIGHT PANEL END */
+
+
+/* SIMULCAST CENTER PANEL */
+
+.simulcast-column-center .top-alerts .alert,
+.simulcast-column-center .center-column .top-buttons div,
+.simulcast-column-center .center-column .bottom-buttons div,
+.simulcast-column-center .main-buttons .center-column .center-buttons .alert {
+    width: 32%;
+    height: 100%;
+}
+
+.simulcast-column-center .btn,
+.simulcast-column-center .top-alerts {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1.1vw;
+    text-align: center;
+    width: 100%;
+    border-radius: 4px;
+}
+
+.simulcast-column-center .top-alerts,
+.simulcast-column-center .main-buttons .center-column .top-buttons,
+.simulcast-column-center .main-buttons .center-column .center-buttons,
+.simulcast-column-center .main-buttons .center-column .bottom-buttons {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.simulcast-column-center .top-alerts {
+    cursor: default;
+    height: 12%;
+}
+
+.simulcast-column-center .main-buttons .center-column .top-buttons button,
+.simulcast-column-center .main-buttons .center-column .bottom-buttons button,
+.simulcast-column-center .main-buttons .center-column .floor-buttons button,
+.simulcast-column-center .main-buttons .center-column .floor-buttons .form-control {
+    height: 100%;
+    padding: 0px;
+    line-height: 1.4vw;
+    font-size: 1.4vw;
+}
+
+.top-buttons,.center-buttons {
+    padding-bottom: 10px;
+}
+
+.simulcast-column-center .main-buttons .center-column .center-buttons .current-process .badge {
+    font-size: 0.8vw;
+    font-weight: 500;
+    overflow: hidden;
+    white-space: pre-wrap;
+    margin-top: 1vw;
+}
+.current-process {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.simulcast-column-center .top-alerts .alert {
+    border: 1px solid #5E5E5E;
+    padding: 0.9vw;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.simulcast-column-center .main-buttons {
+    display: flex;
+    height: 88%;
+}
+
+.simulcast-column-center .main-buttons .left-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 20px;
+    overflow-y: scroll;
+    margin-bottom: 4px;
+}
+
+.simulcast-column-center .main-buttons .clerk-bid-processor-increments div.btn,
+.simulcast-column-right .alt-group-btn div.btn {
+    margin-bottom: 4px;
+    font-weight: 500;
+    font-size: 1vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 10%;
+    min-height: calc(10% - 4px);
+}
+
+.simulcast-column-center .main-buttons .center-column {
+    flex: 6;
+}
+
+.simulcast-column-right input {
+    background: #12213e;
+    color: #ffffff;
+    border-color:#12213e;
+}
+
+.simulcast-column-right input:focus {
+    border-color: #66afe9;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102,175,233,.6);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102,175,233,.6);
+}
+
+
+.badge-status {
+    width: 66%;
+    display: flex;
+}
+
+.badge-margin {
+    margin-left: 5px;
+}
+.badge {
+    font-weight: 500;
+}
+
+.floor-buttons-items {
+    display: flex;
+}
+.floor-buttons-items span,
+.floor-buttons-items input,
+.floor-buttons-items form {
+    width: 100%;
+}
+.floor-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4px;
+}
+.floor-buttons-items {
+    max-width: 66%;
+}
+.input-run {
+    border-radius: 0;
+    padding: 0 10px;
+    text-transform: uppercase;
+    text-align: center;
+    background: #12213E;
+    border-color: #12213E;
+    color: #fff;
+    font-size: 1.1vw;
+}
+.floor-buttons-items .btn {
+    border-radius: 4px;
+}
+.btns-floor div:first-child{
+    border-right: 6px solid #1e3358;
+}
+.btns-floor div:last-child{
+    border-left: 6px solid #1e3358;
+}
+.btns-floor {
+    height: 100%;
+}
+.btn-block-wifi-issue {
+    display: flex;
+    justify-content: space-between;
+    width: 32%;
+}
+.issue-block {
+    width: 65%;
+}
+.issue-block .btn {
+    border-radius: 4px;
+}
+.btn-issue {
+    background-color: #EC7C15;
+    border: 0;
+    color: #1e3358;
+}
+.btn-issue:hover {
+    background-color: #ce7828;
+}
+.btn-issue .badge {
+    background-color: #1e3358;
+}
+.wifi-block {
+    width: 32%;
+}
+.wifi-block{
+    border-radius: 4px;
+    background-color: transparent;
+    border: 1px solid #5E5E5E;
+    font-size: 2vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.status-average {
+    color:#F09C4E;
+}
+
+.center-column {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    padding-top: 20px;
+    margin-left: 15px;
+}
+.center-column>div {
+width: 100%;
+}
+.bottom-buttons {
+    height: 100%;
+    padding-bottom: 10px;
+}
+.curent-bid {
+    font-size: 1.1vw;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.type-bid {
+    font-size: 2vw;
+    font-weight: 600;
+}
+.text-line {
+    font-size: 1.3vw;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 15px 0 -10px;
+}
+.price {
+    font-weight: 600;
+    font-size: 3vw;
+}
+.clerk-badge-status {
+    display: block;
+    font-size: 2vw;
+    font-weight: 500;
+}
+/* SIMULCAST CENTER PANEL END */
+
+
+/* SIMULCAST RIGHT PANEL */
+
+.simulcast-column-right .alt-group-btn {
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap-reverse;
+    height: 88%;
+    width: 100%;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+.simulcast-column-right .alt-group-btn .btn {
+    padding: 6px 0;
+}
+
+.alt-group-btn .btn {
+    width: 32%;
+}
+
+/* SIMULCAST RIGHT PANEL END */
+.custom-bid {
+    display: block;
+        height: 12%;
+    width: 100%;
+}
+.custom-bid .input-group,
+.custom-bid .input-group input,
+.custom-bid .input-group button {
+    height: 100%;
+}
+.simulcast-column-right {
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.custom-bid .input-group {
+    width: 100%;
+    padding-left: 7px;
+}
+
+.custom-bid input {
+    font-size: 1.1vw;
+}
+
+.custom-bid .input-group .input-group-btn {
+    width: 25%;
+}
+
+.custom-bid .input-group .input-group-btn .btn {
+    width: 100%;
+    font-size: 1vw;
+}
+
+/*MAIN PANEL LEFT COLUMN*/
+.clerk-bid-processor-increments-item {
+    max-width: 6vw;
+}
+
+::-webkit-scrollbar { width: 3px; height: 3px;}
+::-webkit-scrollbar-button { height: 0; }
+
+::-webkit-scrollbar-track-piece { background-color: #12213E;}
+::-webkit-scrollbar-thumb { height: 10px; background-color: rgb(9, 21, 46); border-radius: 3px;}
+
+/*toolbar*/
+.simulcast-toolbar {
+    height: 10%;
+    background-color: #0D4D8B;
+    width: 100%;
+}
+.simulcast-toolbar-items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.simulcast-toolbar-item {
+    height: 100%;
+    width: 14%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-weight: 500;
+    cursor: default; 
+    font-size: 1.1vw;
+}
