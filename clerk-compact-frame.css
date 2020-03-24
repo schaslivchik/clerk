@@ -687,7 +687,7 @@ width: 100%;
     .simulcast-column-left .description-table div.announce .announce-text,
     .simulcast-column-left .description-table .history div {
         font-size: 10px;
-        line-height: 12px;
+        line-height: 14px;
     }
     .simulcast-toolbar-item {
         width: 25%;
@@ -704,5 +704,28 @@ width: 100%;
     }
     .clerk-compact .header-actual-vehicle .vehicle-name {
         font-size: 12px;
+    }
+    .simulcast-column-left .description-table .announce button,
+    .simulcast-column-left .description-table .announce span.glyphicon {
+        font-size: 8px;
+    }
+    .custom-bid input,
+    .custom-bid .input-group .input-group-btn .btn {
+        font-size: 10px;
+    }
+    .curent-bid,
+    .clerk-badge-status {
+        font-size: 8px;
+    }
+    .type-bid,
+    .price {
+        font-size: 16px;
+    }
+    .text-line {
+        font-size: 14px;
+    }
+    .simulcast-column-center .main-buttons .center-column .center-buttons .current-process .badge {
+        font-size: 6px;
+        margin-top: 14px;
     }
 }
