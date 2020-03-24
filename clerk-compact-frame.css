@@ -679,15 +679,15 @@ width: 100%;
     .simulcast-column-center .main-buttons .clerk-bid-processor-increments div.btn, .simulcast-column-right .alt-group-btn div.btn,
     .simulcast-column-center .main-buttons .center-column .top-buttons button, .simulcast-column-center .main-buttons .center-column .bottom-buttons button, .simulcast-column-center .main-buttons .center-column .floor-buttons button, .simulcast-column-center .main-buttons .center-column .floor-buttons .form-control,
     .simulcast-column-left .description-table {
-        font-size: 10px;
+        font-size: 14px;
     }
     .simulcast-column-center .main-buttons .center-column .top-buttons button, .simulcast-column-center .main-buttons .center-column .bottom-buttons button, .simulcast-column-center .main-buttons .center-column .floor-buttons button, .simulcast-column-center .main-buttons .center-column .floor-buttons .form-control {
         line-height: 12px;
     }
     .simulcast-column-left .description-table div.announce .announce-text,
     .simulcast-column-left .description-table .history div {
-        font-size: 10px;
-        line-height: 14px;
+        font-size: 14px;
+        line-height: 18px
     }
     .simulcast-toolbar-item {
         width: 25%;
@@ -703,11 +703,14 @@ width: 100%;
         font-size: 14px;
     }
     .clerk-compact .header-actual-vehicle .vehicle-name {
-        font-size: 12px;
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
     }
     .simulcast-column-left .description-table .announce button,
     .simulcast-column-left .description-table .announce span.glyphicon {
-        font-size: 8px;
+        font-size: 12px;
     }
     .custom-bid input,
     .custom-bid .input-group .input-group-btn .btn {
@@ -729,6 +732,6 @@ width: 100%;
         margin-top: 14px;
     }
     .simulcast-column-left .description-table div.announce .announce-text {
-        overflow-y: auto;
+        max-height: 80px;
     }
 }
