@@ -247,7 +247,7 @@
 .simulcast-column-left .description-table .history div {
     font-weight: 400;
     font-size: 0.9vw;
-    line-height: 1.4vw;
+    line-height: 1.3vw;
     width: 100%;
 }
 
@@ -308,8 +308,8 @@
 .simulcast-column-center .main-buttons .center-column .floor-buttons .form-control {
     height: 100%;
     padding: 0px;
-    line-height: 1.4vw;
-    font-size: 1.4vw;
+    line-height: 1.3vw;
+    font-size: 1.3vw;
 }
 
 .top-buttons,.center-buttons {
@@ -334,7 +334,7 @@
     justify-content: center;
     display: flex;
     align-items: center;
-    font-size: 1.4vw;
+    font-size: 1.3vw;
 }
 
 .simulcast-column-center .main-buttons {
@@ -356,7 +356,7 @@
 .simulcast-column-right .alt-group-btn div.btn {
     margin-bottom: 4px;
     font-weight: 500;
-    font-size: 1.4vw;
+    font-size: 1.3vw;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -551,7 +551,7 @@ width: 100%;
 }
 
 .custom-bid input {
-    font-size: 1.4vw;
+    font-size: 1.3vw;
 }
 
 .custom-bid .input-group .input-group-btn {
@@ -560,7 +560,7 @@ width: 100%;
 
 .custom-bid .input-group .input-group-btn .btn {
     width: 100%;
-    font-size: 1.4vw;
+    font-size: 1.3vw;
 }
 
 /*MAIN PANEL LEFT COLUMN*/
@@ -595,7 +595,7 @@ width: 100%;
     text-transform: uppercase;
     font-weight: 500;
     cursor: default; 
-    font-size: 1.4vw;
+    font-size: 1.3vw;
 }
 /*MEDIA*/
 @media all and (max-width: 991px) {
@@ -669,5 +669,40 @@ width: 100%;
     }
     .simulcast-column-center .main-buttons {
         height: 250px;
+    }
+}
+@media all and (max-width: 767px) {
+    .clerk-compact .header-actual-vehicle .vehicle-lights div.btn {
+        height: 30px;
+        width: 30px;
+    }
+    .simulcast-column-center .main-buttons .clerk-bid-processor-increments div.btn, .simulcast-column-right .alt-group-btn div.btn,
+    .simulcast-column-center .main-buttons .center-column .top-buttons button, .simulcast-column-center .main-buttons .center-column .bottom-buttons button, .simulcast-column-center .main-buttons .center-column .floor-buttons button, .simulcast-column-center .main-buttons .center-column .floor-buttons .form-control,
+    .simulcast-column-left .description-table {
+        font-size: 10px;
+    }
+    .simulcast-column-center .main-buttons .center-column .top-buttons button, .simulcast-column-center .main-buttons .center-column .bottom-buttons button, .simulcast-column-center .main-buttons .center-column .floor-buttons button, .simulcast-column-center .main-buttons .center-column .floor-buttons .form-control {
+        line-height: 12px;
+    }
+    .simulcast-column-left .description-table div.announce .announce-text,
+    .simulcast-column-left .description-table .history div {
+        font-size: 10px;
+        line-height: 12px;
+    }
+    .simulcast-toolbar-item {
+        width: 25%;
+        font-size: 8px;
+    }
+    .badge {
+        font-size: 8px;
+    }
+    .simulcast-column-center .top-alerts .alert {
+        font-size: 10px;
+    }
+    .wifi-block {
+        font-size: 14px;
+    }
+    .clerk-compact .header-actual-vehicle .vehicle-name {
+        font-size: 12px;
     }
 }
