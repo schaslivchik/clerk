@@ -334,6 +334,7 @@
     justify-content: center;
     display: flex;
     align-items: center;
+    font-size: 1.4vw;
 }
 
 .simulcast-column-center .main-buttons {
@@ -355,11 +356,10 @@
 .simulcast-column-right .alt-group-btn div.btn {
     margin-bottom: 4px;
     font-weight: 500;
-    font-size: 1vw;
+    font-size: 1.4vw;
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 10%;
     min-height: calc(10% - 4px);
 }
 
@@ -523,7 +523,7 @@ width: 100%;
     padding-top: 20px;
 }
 .simulcast-column-right .alt-group-btn .btn {
-    padding: 6px 0;
+    padding: 0;
 }
 
 .alt-group-btn .btn {
@@ -551,7 +551,7 @@ width: 100%;
 }
 
 .custom-bid input {
-    font-size: 1.1vw;
+    font-size: 1.4vw;
 }
 
 .custom-bid .input-group .input-group-btn {
@@ -560,7 +560,7 @@ width: 100%;
 
 .custom-bid .input-group .input-group-btn .btn {
     width: 100%;
-    font-size: 1vw;
+    font-size: 1.4vw;
 }
 
 /*MAIN PANEL LEFT COLUMN*/
@@ -595,7 +595,7 @@ width: 100%;
     text-transform: uppercase;
     font-weight: 500;
     cursor: default; 
-    font-size: 1.1vw;
+    font-size: 1.4vw;
 }
 /*MEDIA*/
 @media all and (max-width: 991px) {
