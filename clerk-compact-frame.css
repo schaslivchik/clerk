@@ -668,7 +668,7 @@ width: 100%;
         margin-right: 10px;
     }
     .simulcast-column-center .main-buttons {
-        height: 250px;
+        height: auto;
     }
 }
 @media all and (max-width: 767px) {
@@ -682,7 +682,7 @@ width: 100%;
         font-size: 14px;
     }
     .simulcast-column-center .main-buttons .center-column .top-buttons button, .simulcast-column-center .main-buttons .center-column .bottom-buttons button, .simulcast-column-center .main-buttons .center-column .floor-buttons button, .simulcast-column-center .main-buttons .center-column .floor-buttons .form-control {
-        line-height: 12px;
+        line-height: 16px;
     }
     .simulcast-column-left .description-table div.announce .announce-text,
     .simulcast-column-left .description-table .history div {
@@ -694,10 +694,10 @@ width: 100%;
         font-size: 8px;
     }
     .badge {
-        font-size: 8px;
+        font-size: 12px;
     }
     .simulcast-column-center .top-alerts .alert {
-        font-size: 10px;
+        font-size: 14px;
     }
     .wifi-block {
         font-size: 14px;
@@ -733,5 +733,19 @@ width: 100%;
     }
     .simulcast-column-left .description-table div.announce .announce-text {
         max-height: 80px;
+    }
+    .simulcast-column-center .top-alerts {
+        height: auto;
+        margin-bottom: 20px;
+        font-size: 16px;
+    }
+    .simulcast-column-center .main-buttons .left-column {
+        width: 50px;
+    }
+    .clerk-bid-processor-increments-item {
+        min-width: 42px;
+    }
+    .center-column {
+        margin-left: 10px;
     }
 }
