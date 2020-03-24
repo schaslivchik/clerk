@@ -656,7 +656,7 @@ width: 100%;
         height: auto;
     }
     .simulcast-column-right .alt-group-btn {
-        max-height: 360px;
+        max-height: 500px;
     }
     .clerk-compact {
         height: auto;
@@ -693,6 +693,27 @@ width: 100%;
     }
     .simulcast-column-center .top-alerts .alert {
         font-size: 17px;
+    }
+    .custom-bid .input-group, .custom-bid .input-group input, .custom-bid .input-group button {
+        min-height: 50px;
+        margin-bottom: 7px;
+    }
+    .custom-bid .input-group {
+        padding-left: 0;
+    }
+    .simulcast-column-center .main-buttons .clerk-bid-processor-increments div.btn, .simulcast-column-right .alt-group-btn div.btn {
+        font-size: 16px;
+    }
+    .custom-bid input,
+    .custom-bid .input-group .input-group-btn .btn {
+        font-size: 16px;
+    }
+    .badge {
+        font-size: 14px;
+    }
+    .simulcast-toolbar-item {
+        width: 20%;
+        font-size: 16px;
     }
 }
 @media all and (max-width: 767px) {
