@@ -728,4 +728,7 @@ width: 100%;
         font-size: 6px;
         margin-top: 14px;
     }
+    .simulcast-column-left .description-table div.announce .announce-text {
+        overflow-y: auto;
+    }
 }
