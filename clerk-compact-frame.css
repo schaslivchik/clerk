@@ -690,8 +690,8 @@ width: 100%;
         line-height: 18px
     }
     .simulcast-toolbar-item {
-        width: 25%;
-        font-size: 8px;
+        width: 100%;
+        font-size: 14px;
     }
     .badge {
         font-size: 12px;
@@ -751,9 +751,13 @@ width: 100%;
         height: auto;
         min-height: 40px;
     }
-    .center-buttons .current-process {
+   .current-process {
         width: 100%;
         height: auto;
+        min-width: 100%;
+    }
+    .center-buttons {
+        flex-wrap: wrap;
     }
     .badge-status {
         width: 100%;
@@ -774,5 +778,16 @@ width: 100%;
     }
     .btn-block-wifi-issue {
         margin-bottom: 10px;
+    }
+    .simulcast-toolbar-items {
+        padding: 0;
+        flex-wrap: wrap;
+        
+    }
+    .simulcast-toolbar-items div:nth-child(even) {
+        background-color: #1E3358;
+    }
+    .simulcast-toolbar-item {
+        padding: 10px 0;
     }
 }
