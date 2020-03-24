@@ -715,6 +715,19 @@ width: 100%;
         width: 20%;
         font-size: 16px;
     }
+    .clerk-badge-status,
+    .curent-bid,
+    .text-line {
+        font-size: 24px;
+    }
+    .type-bid,
+    .price {
+        font-size: 34px;
+    }
+    .simulcast-column-center .main-buttons .center-column .center-buttons .current-process .badge {
+        margin-top: 14px;
+        font-size: 14px;
+    }
 }
 @media all and (max-width: 767px) {
     .clerk-compact .header-actual-vehicle .vehicle-lights div.btn {
