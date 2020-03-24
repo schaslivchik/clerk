@@ -728,6 +728,15 @@ width: 100%;
         margin-top: 14px;
         font-size: 14px;
     }
+    .bottom-buttons,
+    .simulcast-column-center .top-alerts .alert {
+        height: 60px;
+        padding: 0;
+    }
+    .floor-buttons {
+        height: 60px;
+        margin: 0;
+    }
 }
 @media all and (max-width: 767px) {
     .clerk-compact .header-actual-vehicle .vehicle-lights div.btn {
@@ -758,7 +767,7 @@ width: 100%;
         font-size: 14px;
     }
     .wifi-block {
-        font-size: 14px;
+        font-size: 21px;
     }
     .clerk-compact .header-actual-vehicle .vehicle-name {
         font-size: 16px;
@@ -848,5 +857,9 @@ width: 100%;
     }
     .simulcast-toolbar-item {
         padding: 10px 0;
+    }
+    .floor-buttons {
+        height: 100px;
+    margin: 10px 0;
     }
 }
