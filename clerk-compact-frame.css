@@ -384,6 +384,7 @@
 .badge-status {
     width: 66%;
     display: flex;
+    height: 100%;
 }
 
 .badge-margin {
@@ -619,7 +620,8 @@ width: 100%;
         height:auto;
     }
     .simulcast-column-left .description-table div.announce .announce-text {
-        line-height: 1.6vw;
+        line-height: 24px;
+        font-size: 16px;
     }
     .simulcast-column-left {
         height: 36%;
@@ -641,7 +643,8 @@ width: 100%;
         padding-right: 6px;
     }
     .simulcast-column-center .main-buttons .center-column .top-buttons button, .simulcast-column-center .main-buttons .center-column .bottom-buttons button, .simulcast-column-center .main-buttons .center-column .floor-buttons button, .simulcast-column-center .main-buttons .center-column .floor-buttons .form-control {
-        line-height: 1.8vw;
+        line-height: 26px;
+    font-size: 21px;
     }
     .simulcast-column-center .main-buttons .left-column {
         margin-top: 0;
@@ -669,6 +672,27 @@ width: 100%;
     }
     .simulcast-column-center .main-buttons {
         height: auto;
+    }
+    .simulcast-column-left .description-table div div {
+        font-size: 16px;
+    }
+    .description-table-info-item {
+        padding: 10px;
+    }
+    .simulcast-column-left .description-table .announce button,
+    .simulcast-column-left .description-table .announce span.glyphicon {
+        font-size: 14px;
+    }
+    .simulcast-column-left .description-table .history div {
+        font-size: 14px;
+        line-height: 24px;
+    }
+    .history-block {
+        max-height: 190px;
+        overflow-y: scroll;
+    }
+    .simulcast-column-center .top-alerts .alert {
+        font-size: 17px;
     }
 }
 @media all and (max-width: 767px) {
