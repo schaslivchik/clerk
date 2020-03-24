@@ -819,6 +819,7 @@ width: 100%;
     }
     .badge-status {
         width: 100%;
+        height: auto;
     }
     .alert {
         margin-bottom: 10px;
