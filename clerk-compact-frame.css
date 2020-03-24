@@ -714,21 +714,21 @@ width: 100%;
     }
     .custom-bid input,
     .custom-bid .input-group .input-group-btn .btn {
-        font-size: 10px;
+        font-size: 14px;
     }
     .curent-bid,
     .clerk-badge-status {
-        font-size: 8px;
+        font-size: 16px;
     }
     .type-bid,
     .price {
-        font-size: 16px;
+        font-size: 24px;
     }
     .text-line {
-        font-size: 12px;
+        font-size: 18px;
     }
     .simulcast-column-center .main-buttons .center-column .center-buttons .current-process .badge {
-        font-size: 6px;
+        font-size: 12px;
         margin-top: 14px;
     }
     .simulcast-column-left .description-table div.announce .announce-text {
@@ -736,7 +736,6 @@ width: 100%;
     }
     .simulcast-column-center .top-alerts {
         height: auto;
-        margin-bottom: 20px;
         font-size: 16px;
     }
     .simulcast-column-center .main-buttons .left-column {
@@ -747,5 +746,33 @@ width: 100%;
     }
     .center-column {
         margin-left: 10px;
+    }
+    .simulcast-column-center .top-alerts .alert, .simulcast-column-center .center-column .top-buttons div, .simulcast-column-center .center-column .bottom-buttons div, .simulcast-column-center .main-buttons .center-column .center-buttons .alert {
+        height: auto;
+        min-height: 40px;
+    }
+    .center-buttons .current-process {
+        width: 100%;
+        height: auto;
+    }
+    .badge-status {
+        width: 100%;
+    }
+    .alert {
+        margin-bottom: 10px;
+    }
+    .text-line {
+        margin: 10px 0 -10px;
+    }
+    .floor-buttons {
+        flex-wrap: wrap;
+    }
+    .btn-block-wifi-issue,
+    .floor-buttons-items {
+        width: 100%;
+        max-width: 100%;
+    }
+    .btn-block-wifi-issue {
+        margin-bottom: 10px;
     }
 }
