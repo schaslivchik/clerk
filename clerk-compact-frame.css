@@ -764,7 +764,6 @@ width: 100%;
     }
     .custom-bid .input-group, .custom-bid .input-group input, .custom-bid .input-group button {
         min-height: 50px;
-        margin-bottom: 7px;
     }
     .custom-bid .input-group {
         padding-left: 0;
