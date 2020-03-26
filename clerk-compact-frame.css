@@ -43,7 +43,7 @@
 
 .clerk-compact .header-actual-vehicle {
     display: flex;
-    height: 7%;
+    height: 10%;
 }
 
 .clerk-compact .header-actual-vehicle .vehicle-name,
@@ -68,16 +68,15 @@
 .clerk-compact .header-actual-vehicle .vehicle-lights {
     max-width: 24.5%;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
 }
 
 .clerk-compact .header-actual-vehicle .vehicle-lights div.btn {
-    width: 30px;
-    height: 30px;
+    width: 3.2vw;
+    height: 3.2vw;
     border-radius: 50%;
     border-width: 2px;
-    margin-left: 1vw;
 }
 
 .clerk-compact .header-actual-vehicle .vehicle-lights div.btn:not(.active) {
@@ -97,7 +96,7 @@
 
 .simulcast-panel {
     display: flex;
-    height: 85%;
+    height: 82%;
 }
 
 .simulcast-column-left,
@@ -457,7 +456,7 @@
     background-color: #12213e;
     padding: 15px;
     border-radius: 4px;
-    border: 1px solid #1e3358;
+    border: 1px solid #d9534f;
 }
 .popup-info:before {
     content: '';
@@ -466,6 +465,15 @@
     width: 100%;
     height: 10px;
     left: 0;
+}
+.popup-info:after {
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    width: 20px;
+    height: 20px;
+    border: 10px solid transparent;
+    border-top: 10px solid #d9534f;
 }
 .table-body {
     height: 125px;
@@ -647,11 +655,15 @@ width: 100%;
     max-width: 6vw;
 }
 
-::-webkit-scrollbar { width: 3px; height: 3px;}
+::-webkit-scrollbar { width: 2px; height: 2px;}
 ::-webkit-scrollbar-button { height: 0; }
 
 ::-webkit-scrollbar-track-piece { background-color: #12213E;}
-::-webkit-scrollbar-thumb { height: 10px; background-color: rgb(9, 21, 46); border-radius: 3px;}
+::-webkit-scrollbar-thumb {
+    height: 10px; 
+    background-color: #657686;
+     border-radius: 3px;
+    }
 
 /*toolbar*/
 .simulcast-toolbar {
