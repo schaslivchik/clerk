@@ -73,8 +73,8 @@
 }
 
 .clerk-compact .header-actual-vehicle .vehicle-lights div.btn {
-    width: 2vw;
-    height: 2vw;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
     border-width: 2px;
     margin-left: 1vw;
@@ -638,6 +638,9 @@ width: 100%;
 }
 
 /*MAIN PANEL LEFT COLUMN*/
+.history-block {
+    align-content: flex-start;
+}
 .clerk-bid-processor-increments-item {
     max-width: 6vw;
 }
@@ -672,8 +675,71 @@ width: 100%;
     font-size: 1.1vw;
 }
 /*bottom part*/
-.chat-line {
+.clerk-bottom-pannel {
+    display: flex;
     height: 30%;
+}
+.chat-block, .runlist-items {
+    width: 50%;
+    height: 100%;
+}
+.runlist-items {
+    overflow-y: scroll;
+}
+/*Table style*/
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
+    border-top: none;
+}
+.runlist-table tbody tr th:first-child {
+    width: 15%;
+}
+.runlist-table tbody tr td:nth-child(2) {
+    width: 71%;
+}
+.runlist-table tbody tr td:nth-child(3) {
+    width: 7%;
+    font-size: 0.6vw;
+    text-align: center;
+}
+.runlist-table tbody tr td:nth-child(4) {
+    width: 7%;
+}
+.runlist-table {
+    font-size: 1.1vw;
+    margin: 0;
+    overflow-y: scroll;
+    height: 100%;
+}
+.runlist-table tbody {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.runlist-table tbody tr {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.table-status-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 30px;
+    border-radius: 100%;
+    background-color: #cccccc;
+    font-size: 0.9vw;
+}
+.item-success {
+    background-color: #3AB93A;
+    color: #295629;
+}
+.item-danger {
+    background-color: #D9534F;
+    color: #672725;
+}
+.table-active-item {
+    background-color: #12213E;
 }
 /*MEDIA*/
 @media all and (max-width: 991px) {
@@ -767,6 +833,7 @@ width: 100%;
     .history-block {
         max-height: 190px;
         overflow-y: scroll;
+        align-content: flex-start;
     }
     .simulcast-column-center .top-alerts .alert {
         font-size: 17px;
