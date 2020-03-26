@@ -615,7 +615,7 @@ width: 100%;
 
 /* SIMULCAST RIGHT PANEL END */
 .custom-bid {
-    display: block;
+    display: flex;
         height: 12%;
     width: 100%;
 }
@@ -640,11 +640,13 @@ width: 100%;
 
 .custom-bid .input-group .input-group-btn {
     width: 25%;
+    height: 100%;
 }
 
 .custom-bid .input-group .input-group-btn .btn {
     width: 100%;
     font-size: 1.3vw;
+    height: 100%;
 }
 
 /*MAIN PANEL LEFT COLUMN*/
