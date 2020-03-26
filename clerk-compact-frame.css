@@ -622,7 +622,8 @@ width: 100%;
 }
 .custom-bid .input-group {
     width: 100%;
-    padding-left: 7px;
+    padding-left: 5px;
+    height: 100%;
 }
 
 .custom-bid input {
