@@ -128,66 +128,71 @@
                         <!-- MAIN PANEL COLUMN -->
                         <div class="center-column">
 
-                            <!-- TOP 3 BUTTONS -->
-                            <div class="top-buttons clerk-bid-processor-body">
+                            <div class="inform-clerk-panel">
+                                <div class="inform-clerk-panel-main">
+                                    <!-- TOP 3 BUTTONS -->
+                                    <div class="top-buttons clerk-bid-processor-body">
 
-                                <div>
-                                    <button class="btn btn-lg btn-warning btn-undo">Undo</button>
-                                </div>
+                                        <div>
+                                            <button class="btn btn-lg btn-warning btn-undo">Undo</button>
+                                        </div>
 
-                                <div>
-                                    <button class="btn btn-lg btn-primary btn-override">In Lane<br>Override</button>
-                                </div>
+                                        <div>
+                                            <button class="btn btn-lg btn-primary btn-override">In Lane<br>Override</button>
+                                        </div>
 
-                                <div>
-                                    <button class="btn btn-lg btn-danger" id="reset-button">Reset</button>
+                                        <div>
+                                            <button class="btn btn-lg btn-danger" id="reset-button">Reset</button>
+                                        </div>
+
+                                    </div>
+                                    <!-- TOP 3 BUTTONS END -->
+
+                                    <!-- CENTER BIG BUTTONS -->
+                                    <div class="center-buttons">
+
+                                        <div class="current-process alert">
+                                            <div class="current-process-items">
+                                                <div class="curent-bid">Current Bid</div>
+                                                <div class="type-bid">$15,350</div>
+                                                <div class="text-primary text-line">(In Lane)</div>
+                                                <div class="badge bidder-info" title="Tomorrow Motors">Tomorrow Motors</div>
+                                            </div>
+                                        </div>
+
+                                        <div class="badge-status">
+                                            <button class="btn btn-primary">
+                                                <span class="clerk-badge-status">Next Bid</span>
+                                                <span class="price">$15,425</span>
+                                            </button>
+                                        </div>
+
+                                    </div>
+                                    <!-- CENTER BIG BUTTONS END -->
+
+                                    <!-- BOTTOM 3 BUTTONS -->
+                                    <div class="wrap-bottom-btns">
+                                        <div class="bottom-buttons">
+
+                                            <div>
+                                                <button class="btn btn-lg btn-primary btn-sell">Sell</button>
+                                            </div>
+
+                                            <div>
+                                                <button class="btn btn-lg btn-primary btn-no-sale">No Sale</button>
+                                            </div>
+
+                                            <div>
+                                                <button class="btn btn-lg btn-primary btn-if-sale">If Sale</button>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                    <!-- BOTTOM 3 BUTTONS END -->
                                 </div>
 
                             </div>
-                            <!-- TOP 3 BUTTONS END -->
-
-                            <!-- CENTER BIG BUTTONS -->
-                            <div class="center-buttons">
-
-                                <div class="current-process alert">
-                                    <div class="current-process-items">
-                                        <div class="curent-bid">Current Bid</div>
-                                        <div class="type-bid">$15,350</div>
-                                        <div class="text-primary text-line">(In Lane)</div>
-                                        <div class="badge bidder-info" title="Tomorrow Motors">Tomorrow Motors</div>
-                                    </div>
-                                </div>
-
-                                <div class="badge-status">
-                                    <button class="btn btn-primary">
-                                        <span class="clerk-badge-status">Next Bid</span>
-                                        <span class="price">$15,425</span>
-                                    </button>
-                                </div>
-
-                            </div>
-                            <!-- CENTER BIG BUTTONS END -->
-
-                            <!-- BOTTOM 3 BUTTONS -->
-                            <div>
-                                <div class="bottom-buttons">
-
-                                    <div>
-                                        <button class="btn btn-lg btn-primary btn-sell">Sell</button>
-                                    </div>
-
-                                    <div>
-                                        <button class="btn btn-lg btn-primary btn-no-sale">No Sale</button>
-                                    </div>
-
-                                    <div>
-                                        <button class="btn btn-lg btn-primary btn-if-sale">If Sale</button>
-                                    </div>
-
-                                </div>
-
-                            </div>
-                            <!-- BOTTOM 3 BUTTONS END -->
 
                             <!-- FLOOR BUTTONS. PREV / NEXT + ISSUES -->
                             <div class="floor-buttons">
@@ -303,6 +308,31 @@
                     </div>
                 </div>
 
+
+                <div class="inform-clerk-panel-status disabled-block">
+                    <div class="alert alert-success">
+                        <div class="inform-panel-status">
+                            <div class="floor-status"><i class="fa fa-check-circle" aria-hidden="true"></i> success</div>
+                            <div class="floor-info">Floor: <b>100500</b></div>
+                        </div>
+                        <div class="inform-panel-dealer-buyer">
+                            <div class="inform-panel-buyer"><span>Buyer:</span> <b>John Washington</b></div>
+                            <div class="inform-panel-dealer"><span>Dealer:</span> <b>Tommorow Motors</b></div>
+                        </div>
+                    </div>
+                    <div class="block-vehicle-status">
+                        <div class="block-vehicle-status-sale">if sale</div>
+                        <div class="vehicle-sold">in lane<div class="lane-number">34</div>
+                        </div>
+                    </div>
+                    <div class="block-vehicle-btns">
+                        <div class="alert alert-success text-uppercase">vsn 5276074</div>
+                        <div class="btn btn-warning btn-undo text-uppercase">Undo</div>
+                        <div class="btn-group" role="group">
+                            <input type="text" class="form-control input-badge" placeholder="Input Badge #">
+                        </div>
+                    </div>
+                </div>
             </div>
             <!-- MAIN ROWS END -->
 
@@ -405,8 +435,19 @@
                 </table>
             </div>
         </div>
-
     </div>
+    <script>
+        $('.btn-undo').click(function () {
+            $('.simulcast-column-right').addClass('active-block').removeClass('disabled-block');
+            $('.simulcast-column-center').addClass('active-block').removeClass('disabled-block');
+            $('.inform-clerk-panel-status').addClass('disabled-block').removeClass('active-block');
+        })
+        $('.btn-if-sale').click(function () {
+            $('.simulcast-column-right').addClass('disabled-block').removeClass('active-block');
+            $('.simulcast-column-center').addClass('disabled-block').removeClass('active-block');
+            $('.inform-clerk-panel-status').addClass('active-block').removeClass('disabled-block');
+        }) 
+    </script>
 </body>
 
 </html>
