@@ -315,7 +315,10 @@
     line-height: 1.2vw;
     font-size: 1.1vw;
 }
-
+.btn-undo, .alert-vsn {
+    font-size: 1.1vw;
+    font-weight: 500;
+}
 .top-buttons,.center-buttons {
     padding-bottom: 10px;
 }
@@ -370,7 +373,7 @@
 }
 
 .simulcast-column-center .main-buttons .center-column {
-    /* flex: 6; */
+    flex: 6;
     width: 85%;
 }
 
@@ -1067,6 +1070,15 @@ width: 100%;
     .table-responsive {
         border: none;
     }
+    .inform-clerk-panel-status {
+        max-width: 100%;
+    }
+    .block-vehicle-status {
+        min-height: 200px;
+    }
+    .simulcast-column-center .main-buttons .left-column {
+        width: auto;
+    }
 }
 @media all and (max-width: 767px) {
     .clerk-compact .header-actual-vehicle .vehicle-lights div.btn {
@@ -1209,5 +1221,32 @@ width: 100%;
     }
     .table-body {
         height: calc(100% - 38px);
+    }
+    .block-vehicle-btns {
+        flex-wrap: wrap;
+        
+    }
+  
+    .block-vehicle-btns div:nth-child(2) {
+        margin: auto;
+        margin-bottom: 10px;
+    }
+     .block-vehicle-btns > div {
+        font-size: 16px;
+        height: 40px;
+        margin-bottom: 10px;
+        padding: 0;
+    }
+    .input-badge {
+        font-size: 16px;
+    }
+    .vehicle-sold {
+        font-size: 32px;
+    }
+    .block-vehicle-status-sale {
+        font-size: 21px;
+    }
+    .center-column {
+        padding:0;
     }
 }
