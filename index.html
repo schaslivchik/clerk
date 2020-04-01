@@ -191,7 +191,6 @@
                                     </div>
                                     <!-- BOTTOM 3 BUTTONS END -->
                                 </div>
-
                             </div>
 
                             <!-- FLOOR BUTTONS. PREV / NEXT + ISSUES -->
@@ -446,7 +445,20 @@
             $('.simulcast-column-right').addClass('disabled-block').removeClass('active-block');
             $('.simulcast-column-center').addClass('disabled-block').removeClass('active-block');
             $('.inform-clerk-panel-status').addClass('active-block').removeClass('disabled-block');
-        }) 
+        })
+
+        $('.btn-issue').click(function () {
+            $('.popup-info').toggle();
+        })
+
+        $(document).mouseup(function (e) {
+            var block = $(".popup-info");
+            if (!block.is(e.target)
+                && block.has(e.target).length === 0) {
+                block.hide();
+            }
+        });
+
     </script>
 </body>
 

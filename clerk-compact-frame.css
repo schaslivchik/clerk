@@ -531,9 +531,9 @@
 .table-body-items li:nth-child(3) {
     width: 50%;
 }
-.issue-block:hover .popup-info {
+/* .issue-block:hover .popup-info {
     display: block;
-}
+} */
 .issue-block .btn {
     border-radius: 4px;
 }
