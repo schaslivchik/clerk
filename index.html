@@ -447,17 +447,17 @@
             $('.inform-clerk-panel-status').addClass('active-block').removeClass('disabled-block');
         })
 
+        var block = $(".popup-info");
         $('.btn-issue').click(function () {
-            $('.popup-info').toggle();
-        })
-
-        $(document).mouseup(function (e) {
-            var block = $(".popup-info");
-            if (!block.is(e.target)
-                && block.has(e.target).length === 0) {
+            block.toggle();
+        });
+        $(document).on('click', function (e) {
+            if (!$(e.target).closest(".issue-block").length) {
                 block.hide();
             }
+            e.stopPropagation();
         });
+
 
     </script>
 </body>

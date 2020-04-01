@@ -542,6 +542,9 @@
     border: 0;
     color: #1e3358;
 }
+.show-issue {
+    display:block;
+}
 .btn-issue:hover {
     background-color: #ce7828;
 }
